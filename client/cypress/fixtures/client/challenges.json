@@ -1,0 +1,277 @@
+[
+	{
+		"id": 1,
+		"name": "React Recoil",
+		"boilerPlate": "suvelocity/recoil-boilerplate",
+		"description": "https://github.com/suvelocity/recoil-boilerplate",
+		"type": "client-only",
+		"repositoryName": "suvelocity/recoil-challenge",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "React",
+				"id": 1
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			}
+		],
+		"averageRaiting": "2.3723",
+		"submissionsCount": 1
+	},
+	{
+		"id": 2,
+		"name": "React - 4 In A Row",
+		"boilerPlate": "suvelocity/4In-a-row-BOILERPLATE",
+		"description": "https://github.com/suvelocity/4In-a-row-BOILERPLATE",
+		"type": "client-only",
+		"repositoryName": "suvelocity/4In-a-row-CHALLENGE",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "React",
+				"id": 1
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			}
+		],
+		"averageRaiting": "3.5000",
+		"submissionsCount": 1
+	},
+	{
+		"id": 3,
+		"name": "React - Calculator",
+		"boilerPlate": "suvelocity/calculator-challenge",
+		"description": "https://github.com/suvelocity/calculator-challenge",
+		"type": "client-only",
+		"repositoryName": "suvelocity/calculator-challange-tests",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "React",
+				"id": 1
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			}
+		],
+		"averageRaiting": "2.0000",
+		"submissionsCount": 1
+	},
+	{
+		"id": 4,
+		"name": "React - Tv shows",
+		"boilerPlate": "suvelocity/TV-shows-boilerplate",
+		"description": "tomer: https://github.com/suvelocity/TV-shows-boilerplate",
+		"type": "client-only",
+		"repositoryName": "suvelocity/TV-shows-challenge",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "React",
+				"id": 1
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	},
+	{
+		"id": 5,
+		"name": "React - Chat app",
+		"boilerPlate": "suvelocity/Chat-App-Template",
+		"description": "https://github.com/suvelocity/Chat-App-Template",
+		"type": "fullstack",
+		"repositoryName": "suvelocity/Chat_App-Challange",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "React",
+				"id": 1
+			},
+			{
+				"name": "Node",
+				"id": 2
+			},
+			{
+				"name": "Express",
+				"id": 3
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	},
+	{
+		"id": 6,
+		"name": "Js - Drag N Scale",
+		"boilerPlate": "suvelocity/DragAndScaleBoilerplate",
+		"description": "https://github.com/suvelocity/DragAndScaleBoilerplate",
+		"type": "client-only",
+		"repositoryName": "suvelocity/drag-n-scale",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "JavaScript",
+				"id": 4
+			},
+			{
+				"name": "HTML",
+				"id": 5
+			},
+			{
+				"name": "CSS",
+				"id": 6
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	},
+	{
+		"id": 7,
+		"name": "Mysql - My Nodejs ORM",
+		"boilerPlate": "suvelocity/challenge-sequelize-template",
+		"description": "https://github.com/suvelocity/challenge-sequelize-template",
+		"type": "server-mysql",
+		"repositoryName": "suvelocity/challenge-sequelize",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "Node",
+				"id": 2
+			},
+			{
+				"name": "Express",
+				"id": 3
+			},
+			{
+				"name": "SQL",
+				"id": 8
+			},
+			{
+				"name": "ORM",
+				"id": 9
+			},
+			{
+				"name": "Object-Oriented",
+				"id": 11
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	},
+	{
+		"id": 8,
+		"name": "JWT - Node.js",
+		"boilerPlate": "suvelocity/Authentication-Challenge-TEMPLATE",
+		"description": "https://github.com/suvelocity/Authentication-Challenge-TEMPLATE",
+		"type": "server-only",
+		"repositoryName": "suvelocity/Authentication-Challenge",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "Node",
+				"id": 2
+			},
+			{
+				"name": "Express",
+				"id": 3
+			},
+			{
+				"name": "JavaScript",
+				"id": 4
+			},
+			{
+				"name": "Secure Coding",
+				"id": 12
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	},
+	{
+		"id": 9,
+		"name": "Promise Implementation",
+		"boilerPlate": "suvelocity/PromiseBoilerplate",
+		"description": "https://github.com/suvelocity/PromiseBoilerplate",
+		"type": "server-only",
+		"repositoryName": "suvelocity/PromiseChallenge",
+		"authorId": 1,
+		"createdAt": "2020-10-01T20:00:00.000Z",
+		"updatedAt": "2020-10-01T20:00:00.000Z",
+		"deletedAt": null,
+		"Author": {
+			"userName": "suvelocity"
+		},
+		"Labels": [
+			{
+				"name": "JavaScript",
+				"id": 4
+			},
+			{
+				"name": "Object-Oriented",
+				"id": 11
+			}
+		],
+		"averageRaiting": null,
+		"submissionsCount": 0
+	}
+]
