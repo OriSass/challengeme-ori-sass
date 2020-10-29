@@ -207,6 +207,15 @@ export default function NarrowNav({ darkMode, setDarkMode, isAdmin }) {
               <ListItemText primary="Add New Challenge" />
             </ListItem>
           </Link>
+          <Divider style={dividerColor} />
+          <Link to="/see-weak-topics" className="link-rout">
+            <ListItem button onClick={handleDrawerClose} style={letterColor}>
+              <ListItemIcon>
+                <InfoIcon style={letterColor} />
+              </ListItemIcon>
+              <ListItemText primary="See Weak Topics" />
+            </ListItem>
+          </Link>
           {isAdmin &&
           <>
           <Divider style={dividerColor} />

@@ -16,6 +16,7 @@ router.use("/statistics", checkToken, require("./statisticsRoutes"));
 router.use("/types", checkToken, require("./types"));
 router.use("/labels", checkToken, require("./labels"));
 router.use("/reviews", checkToken, require("./reviews"));
+router.use("/topics", checkToken, require("./topics"));
 
 // Admin Route Super Pprotected
 router.use("/admin", checkToken, checkAdmin, require("./admin"));

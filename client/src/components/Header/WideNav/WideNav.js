@@ -189,6 +189,17 @@ export default function WideNav({ darkMode, setDarkMode,isAdmin }) {
               Add New Challenge
             </Button>
           </Link>
+          <Link to="/see-weak-topics" className="link-rout">
+            <Button
+              onClick={() => setAnchorEl(null)}
+              className={classes.infoButton}
+              style={{ minWidth: 150 }}
+              variant="contained"
+              color="default"
+            >
+              See Weak Topics
+            </Button>
+          </Link>
           {isAdmin &&
           <Link to="/admin" className="link-rout">
             <Button

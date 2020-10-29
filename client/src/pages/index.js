@@ -16,6 +16,7 @@ import ErrorBoundry from "../components/ErrorBoundry";
 import Loading from "../components/Loading/Loading";
 import "../index.css";
 import NewChallengeForm from "./NewChallenge/NewChallengeForm"
+import WeakTopics from "./WeakTopics/WeakTopics";
 import UserProfile from "./UserProfile";
 import Admin from "./Admin";
 
@@ -133,6 +134,9 @@ export default function Router() {
                           </Route>
                           <Route exact path="/addnewchallenge">
                             <NewChallengeForm />
+                          </Route>
+                          <Route exact path="/see-weak-topics">
+                            <WeakTopics />
                           </Route>
                           {isAdmin &&
                             <Route path="/admin">
