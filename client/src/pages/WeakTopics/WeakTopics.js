@@ -20,9 +20,9 @@ function WeakTopics() {
         console.log(`Event target:\n  ${event.target.id}`);
         const index = event.target.id;
         setTopics(prevArr => {
-            const updatedTopics = prevArr;
-            console.log(`index is ${index}`);
-            console.log(updatedTopics[index]);
+            const updatedTopics = [...prevArr];
+            // console.log(`index is ${index}`);
+            // console.log(updatedTopics[index]);
             updatedTopics[index].demandCounter++;
             return updatedTopics;
         })
