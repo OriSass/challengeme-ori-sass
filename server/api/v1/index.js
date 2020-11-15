@@ -15,6 +15,9 @@ v1Router.use('/types', checkToken, require('./types'));
 v1Router.use('/labels', checkToken, require('./labels'));
 v1Router.use('/reviews', checkToken, require('./reviews'));
 v1Router.use('/insights', checkToken, require('./insightsRoutes'));
+v1Router.use('/topics', 
+//checkToken,
+ require('./topics'));
 v1Router.use('/teams', checkToken, require('./teams'));
 
 // Admin Route Super Protected

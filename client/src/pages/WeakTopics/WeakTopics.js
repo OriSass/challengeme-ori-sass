@@ -5,6 +5,8 @@ import './WeakTopics.css';
 function WeakTopics() {
 
     const [topics, setTopics] = useState();
+    const [newTopic, setNewTopic] = useState("");
+    const [newTopicCategory, setNewTopicCategory] = useState("FullStack");
 
     const fetchTopics = async() => {
         const { data } = await network.get('/api/v1/topics/allTopics');
@@ -21,31 +23,54 @@ function WeakTopics() {
         const index = event.target.id;
         setTopics(prevArr => {
             const updatedTopics = [...prevArr];
-            // console.log(`index is ${index}`);
-            // console.log(updatedTopics[index]);
             updatedTopics[index].demandCounter++;
             return updatedTopics;
         })
-        //this.forceUpdate();
+    }
+    const AddNewTopic = async() => {
+        //console.log("adding a topic");
+        const topic = {newTopic, newTopicCategory};
+        await network.post("/api/v1/topics/new-topic",topic);
+        fetchTopics();
     }
     const renderTopics = () => {
-        return (topics.map((topic, index) => {
-            return (
-            <div key={index} className="single-topic">
-                {topic.name} : {topic.demandCounter} <button id={index} onClick={handlePlusOne}>+1</button>
-            </div>)
-        }))}
+        return (
+            <table>
+            <th>Weak Topics {newTopic}</th>
+            {topics.map((topic, index) => {
+                if(topic.authorized === true){
+                return (
+                <tr key={index} className="single-topic">
+                   <td> {topic.name} : {topic.demandCounter}</td>
+                   <td><button id={index} onClick={handlePlusOne}>+1</button></td>
+                </tr>)
+                }
+            })}
+            </table>
+        )
+    }
+    
+    //check if admin
+    //add a place for admin to authorize new topics.
+    //display all unauthorized topics
+    //user topics
 
     return (
         <div id="wrapper">
-            <div>table</div><br/>
+        
             {topics ? renderTopics()
              : <></>} 
             <div>
                  add a topic:
+                 <input type="text" onChange={({target}) => setNewTopic(target.value)} />
+                 <select name="cars" id="cars" onChange={(e) => setNewTopicCategory(e.target.value)}>
+                    <option value="FullStack">FullStack</option>
+                    <option value="Cyber">Cyber</option>
+                    <option value="Other">Other</option>
+                </select>
             </div>
             <div>
-                <button>Save</button>
+                <button onClick={AddNewTopic}>Add</button>
             </div>
         </div>
     )

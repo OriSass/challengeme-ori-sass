@@ -26,6 +26,10 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "authorId",
         as: "Author",
       });
+      this.belongsToMany(models.Topic, {
+        through: "TopicUser",
+        foreignKey: "user_id",
+      });
     }
   }
   User.init(
