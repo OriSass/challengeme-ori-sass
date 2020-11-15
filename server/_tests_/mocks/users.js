@@ -1,45 +1,25 @@
-// const bcrypt = require('bcrypt')
-
-/*
-        these user are valid for registertion.
-        if U want to add them directly to your DB -->
-        mockUser.password = await bcrypt.hashSync(mockUser.password, 10);
-        mockUser.securityAnswer = await bcrypt.hashSync(mockUser.securityAnswer, 10);
-        await User.create(mockUser);
-*/
-
 module.exports = [
   {
-    firstName: 'dekel',
-    lastName: 'vaknin',
-    userName: 'dek12345',
-    email: 'dek@gmail.com',
-    password: '12345678', // password: 'blabla96'
-    birthDate: new Date('1996/04/01'),
-    country: 'israel',
-    city: 'jerusalem',
-    phoneNumber: '0546666666',
-    githubAccount: 'dekelGithub',
-    reasonOfRegistration: 'cats videos',
+    id: 1,
+    firstName: 'cyber4S',
+    lastName: 'suvelocity',
+    userName: 'regularUser',
+    password: '12345678',
+    email: 'regularUser@gmail.com',
+    birthDate: new Date('1997/06/17'),
+    country: 'Israel',
+    city: 'Tel Aviv',
+    phoneNumber: '0508864599',
+    githubAccount: 'suvelocity1',
+    reasonOfRegistration: "'Challenge Myself'",
     securityQuestion: 'Who was your childhood hero?',
-    securityAnswer: 'budybudy',
+    securityAnswer: 'superman',
+    created_at: new Date(),
+    updated_at: new Date(),
+    permission: 'user',
   },
   {
-    firstName: 'roy',
-    lastName: 'shnitzer',
-    userName: 'shnizel123',
-    email: 'shnizel@gmail.com',
-    password: '87654321',
-    birthDate: new Date('1997/04/01'),
-    country: 'israel',
-    city: 'tuval',
-    phoneNumber: '0546666668',
-    githubAccount: 'shnizelGithub',
-    reasonOfRegistration: 'coding',
-    securityQuestion: 'Who was your childhood hero?',
-    securityAnswer: 'sequelize',
-  },
-  {
+    id: 2,
     firstName: 'david',
     lastName: 'boostrap',
     userName: 'boosty123',
@@ -50,8 +30,26 @@ module.exports = [
     city: 'gamzo',
     phoneNumber: '0546666667',
     githubAccount: 'davidGithub',
-    reasonOfRegistration: 'design',
+    reasonOfRegistration: "'Challenge Myself'",
     securityQuestion: 'Who was your childhood hero?',
-    securityAnswer: 'boostrap',
+    securityAnswer: 'superman',
+    permission: 'user',
+  },
+  {
+    id: 3,
+    firstName: 'roy',
+    lastName: 'king',
+    userName: 'royTheKing',
+    password: '12345678',
+    email: 'royTheKing@gmail.com',
+    birthDate: new Date('1996/02/17'),
+    country: 'Israel',
+    city: 'Tel Aviv',
+    phoneNumber: '050812399',
+    githubAccount: 'suvelocity',
+    reasonOfRegistration: "'Challenge Myself'",
+    securityQuestion: 'Who was your childhood hero?',
+    securityAnswer: 'superman',
+    permission: 'admin',
   },
 ];

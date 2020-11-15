@@ -1,17 +1,14 @@
 module.exports = [
   {
+    id: 1,
     name: 'teamA',
-    createdAt: new Date(),
-    updatedAt: new Date(),
   },
   {
+    id: 2,
     name: 'teamB',
-    createdAt: new Date(),
-    updatedAt: new Date(),
   },
   {
+    id: 3,
     name: 'cyber4s',
-    createdAt: new Date(),
-    updatedAt: new Date(),
   },
 ];

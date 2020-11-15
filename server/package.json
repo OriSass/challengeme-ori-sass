@@ -9,7 +9,8 @@
     "migrate": "node_modules/.bin/sequelize db:migrate",
     "seed": "node_modules/.bin/sequelize db:seed:all",
     "dev": "nodemon index.js",
-    "devTest": "NODE_ENV=test nodemon index.js"
+    "devTest": "NODE_ENV=test nodemon index.js",
+    "cyTest": "npm run devTest & cypress run"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "ngrok": "^3.3.0",
     "nock": "^13.0.4",
     "sequelize-cli": "^6.2.0",
+    "start-server-and-test": "^1.11.5",
     "supertest": "^4.0.2"
   }
 }

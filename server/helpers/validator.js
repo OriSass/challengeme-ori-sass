@@ -38,7 +38,7 @@ const loginValidation = (data) => {
 const method = async (value, helpers) => {
  try {
   await axios.get(
-    `/api/v1/services/public_repo?repo_name=${value}`,
+    `/api/v1/services/public-repo?repo_name=${value}`,
   );
   } catch (err) {
     return helpers.error('any.invalid');
@@ -49,8 +49,8 @@ const method = async (value, helpers) => {
 
 const newChallengeValidation = (data) => {
   const schema = Joi.object({
-    name:  Joi.string().min(1).regex(/^[a-zA-Z\s]*$/).required(),
-    description: Joi.string().min(1).max(120).regex(/^[a-zA-Z\s]*$/).required(),
+    name:  Joi.string().min(1).max(100).required(),
+    description: Joi.string().min(1).max(500).required(),
     type: Joi.string().valid('client-only', 'fullstack-mysql','fullstack','server-mysql','server-only').required(),
     repositoryName: Joi.string().custom(method,'custom1').required(),
     boilerPlate: Joi.string().custom(method ,'custom2').required(),
