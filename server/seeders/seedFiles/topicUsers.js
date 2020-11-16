@@ -7,58 +7,58 @@ module.exports = [
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 2,
       topic_id: 2,
       user_id: 1,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 3,
       topic_id: 3,
       user_id: 1,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 4,
       topic_id: 4,
       user_id: 1,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 5,
       topic_id: 1,
       user_id: 2,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 6,
       topic_id: 1,
       user_id: 3,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 7,
       topic_id: 1,
       user_id: 4,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 8,
       topic_id: 2,
-      user_id: 5,
+      user_id: 4,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 
     {
-      id: 1,
+      id: 9,
       topic_id: 3,
-      user_id: 6,
+      user_id: 3,
       created_at: "2020-10-29 13:17:04",
       updated_at: "2020-10-29 13:17:04"
     }, 

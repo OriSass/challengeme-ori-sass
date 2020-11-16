@@ -9,7 +9,7 @@ function WeakTopics() {
     const [newTopicCategory, setNewTopicCategory] = useState("FullStack");
 
     const fetchTopics = async() => {
-        const { data } = await network.get('/api/v1/topics/allTopics');
+        const { data } = await network.get('/api/v1/topics/all-topics');
         console.log(data);
         setTopics(data);
     }
@@ -18,14 +18,19 @@ function WeakTopics() {
         fetchTopics();
     }, [])
 
-    const handlePlusOne = (event) => {
+    const handlePlusOne = async(event) => {
         console.log(`Event target:\n  ${event.target.id}`);
         const index = event.target.id;
+        const topicId = event.target.value;
+        await network.put('/api/v1/topics/add-demand', {topicId, userId: 1})
         setTopics(prevArr => {
             const updatedTopics = [...prevArr];
             updatedTopics[index].demandCounter++;
             return updatedTopics;
         })
+    }
+    const handleSave = () => {
+
     }
     const AddNewTopic = async() => {
         //console.log("adding a topic");
@@ -36,13 +41,13 @@ function WeakTopics() {
     const renderTopics = () => {
         return (
             <table>
-            <th>Weak Topics {newTopic}</th>
+            <th>Weak Topics </th>
             {topics.map((topic, index) => {
                 if(topic.authorized === true){
                 return (
                 <tr key={index} className="single-topic">
                    <td> {topic.name} : {topic.demandCounter}</td>
-                   <td><button id={index} onClick={handlePlusOne}>+1</button></td>
+                   <td><button id={index} value={topic.id} onClick={handlePlusOne}>+1</button></td>
                 </tr>)
                 }
             })}
